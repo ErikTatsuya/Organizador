@@ -8,6 +8,8 @@ fn get_message() -> String {
 
 #[tauri::command]
 fn get_folder_name(folder_path) -> String{
+
+    
     let folder = fs::read_dir(&folder_path)
     let mut folder_name = String::new();
 }
